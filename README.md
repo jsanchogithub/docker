@@ -51,10 +51,10 @@ Then, we deploy our Docker work over the APP_NAME. Then we can validate in the U
 	> heroku container:release web -a APP_NAME
 
 
-On my case:
+On my case:<br>
 
-heroku container:push web -a fathomless-thicket-72625	// to deploy to Heroku server
-heroku container:release web -a fathomless-thicket-72625 	// to make it visible in the web<br>
+	> heroku container:push web -a fathomless-thicket-72625	// to deploy to Heroku server<br>
+	> heroku container:release web -a fathomless-thicket-72625 	// to make it visible in the web<br>
 
 ## 2.- Some examples of Docker constainers.
 
