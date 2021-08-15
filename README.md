@@ -42,11 +42,16 @@ Then, we deploy our Docker work over the APP_NAME. Then we can validate in the U
 
 4. On my case, URL is https://fathomless-thicket-72625.herokuapp.com/ wich means that my APP_NAME = fathomless-thicket-72625
 
-5. Deploy (send to the server)<br>
+5. Login into heroku container<br>
+
+	> heroku container:login
+(https://stackoverflow.com/questions/63367585/heroku-docker-deploy-throws-unauthorized-authentication-required)
+
+6. Deploy (send to the server)<br>
 
 	> heroku container:push web -a APP_NAME
 
-5. Release (make it visible)<br>
+7. Release (make it visible)<br>
 
 	> heroku container:release web -a APP_NAME
 
@@ -61,4 +66,5 @@ On my case:<br>
 I expect to add some copy-paste examples in the future. For now, just the example-docker-helloworld (the one I used before).<br>
 
 
-<em>Last update of this repository: 2021-02-21 (readme file final format)</em>
+<em>2021-08-15 (add heroku container:login)</em>
+<em>2021-02-21 (readme file final format)</em>
